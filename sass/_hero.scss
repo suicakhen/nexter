@@ -1,0 +1,186 @@
+.hero {
+  background-color: $color-grey-dark-1;
+  grid-column: full-start/full-end;
+  min-height: 90vh;
+  overflow: hidden;
+  background-image: linear-gradient(
+      rgba($color-secondary, 0.93),
+      rgba($color-secondary, 0.93)
+    ),
+    url(../img/hero.jpeg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 2rem 4.8rem 6rem;
+
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: 1fr minmax(min-content, max-content) 1fr;
+  grid-row-gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+
+  &__btn {
+    align-self: start;
+    justify-self: start;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+
+  &__text {
+    align-self: end;
+    grid-column: 2/3;
+  }
+
+  &__filter-container {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    .tabs {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      list-style: none;
+      font-size: 1.6rem;
+      color: $color-grey-light-1;
+      margin-bottom: 2.4rem;
+
+      .tab {
+        margin-right: 1.2rem;
+        font-size: 1.6rem;
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 1.4rem 0.8rem 1rem 0;
+        transition: 0.3s;
+        font-size: 17px;
+        letter-spacing: 1px;
+        color: $color-grey-light-1;
+      }
+      .tab.active {
+        border-bottom: 2px solid $color-primary;
+      }
+    }
+    .searchbox {
+      max-width: 100%;
+      margin-right: auto;
+      position: relative;
+      min-height: 4.8rem;
+      margin-left: auto;
+
+      input {
+        width: 100%;
+        min-height: 4.8rem;
+        border-radius: 5rem;
+        text-align: start;
+        padding: 0 2.4rem;
+        outline: none;
+        border: 1px solid $color-grey-dark-2;
+        background-color: transparent;
+        z-index: -10;
+        box-sizing: border-box;
+        color: $color-grey-light-1;
+      }
+
+      .searchbox__filters {
+        display: flex;
+        gap: 2.4rem;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        margin-right: auto;
+
+        .divider {
+          background-color: #ddd;
+          flex: 0 0 1px;
+          width: 1px;
+          height: 3rem;
+          margin: 4px 6px;
+        }
+
+        .filters-btn {
+          border: none;
+          background-color: transparent;
+          cursor: pointer;
+        }
+
+        .search-button {
+          background: #b28451;
+          border-radius: 50%;
+          position: relative;
+          flex-shrink: 0;
+          width: 4.4rem;
+          height: 4rem;
+          margin: auto 8px;
+          padding-top: 4px;
+          border: none;
+          cursor: pointer;
+
+          svg {
+            width: 1.6rem;
+            height: auto;
+          }
+
+          @media only screen and (max-width: $bp-medium) {
+            grid-column: 1 / -1;
+          }
+
+          @media only screen and (max-width: $bp-small) {
+          }
+        }
+      }
+    }
+  }
+  &__seeonon-contatainer {
+    grid-row: 3/4;
+    grid-column: 1/-1;
+    align-self: end;
+    padding-bottom: 3.2rem;
+  }
+  &__seenon-text {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-column-gap: 1.5rem;
+    align-items: center;
+
+    font-size: 1.6rem;
+    color: $color-grey-light-2;
+
+    &::before,
+    &::after {
+      content: '';
+      height: 1px;
+      display: block;
+      background-color: currentColor;
+    }
+  }
+
+  &__seenon-logos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 3rem;
+    justify-items: center;
+    align-items: center;
+    margin-top: 2.4rem;
+
+    img {
+      max-height: 2.5rem;
+      max-width: 100%;
+      filter: brightness(70%);
+    }
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    grid-column: 1 / -1;
+    padding: 0rem 2.4rem;
+  }
+  @media only screen and (max-width: $bp-small) {
+    grid-column: 1 / -1;
+  }
+}

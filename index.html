@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <title>nexter &mdash; your home, your freedom</title>
+  </head>
+  <body class="container">
+   
+    <header class="header">
+        <img src="img/logo.png" alt="Nexter logo" class="header__logo" />
+        <div class="mobnav">
+          <nav class="mobnav__nav" id="mobnav">
+            <ul class="mobnav__list">
+              <li class="mobnav__item active"><a href="" class="mobnav__link">For Sale</a></li>
+              <li class="mobnav__item"><a href="" class="mobnav__link">For Rent</a></li>
+              <li class="mobnav__item"><a href="" class="mobnav__link">Sold</a></li>
+              <li class="mobnav__item"><a href="" class="mobnav__link">New Home</a></li>
+              <li class="mobnav__item"><a href="" class="mobnav__link">Find Agents</a></li>
+            </ul>
+          </nav>
+          <button class="mobnav__menu" id="btn__menu"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></button>
+          <button class="mobnav__close" id="btn__close"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></button>
+        </div>
+       
+        <nav>
+          <ul class="header__nav">
+            <li class="nav__item active"><a href="" class="nav__link">For Sale</a></li>
+            <li class="nav__item"><a href="" class="nav__link">For Rent</a></li>
+            <li class="nav__item"><a href="" class="nav__link">Sold</a></li>
+            <li class="nav__item"><a href="" class="nav__link">New Home</a></li>
+          </ul>
+        </nav>
+  
+        <div class="nav-btn">
+          <button href="/login" class="btn header__btn" id="header__btn">Login</button>
+        </div>
+    </header> 
+
+    <!-- HERO -->
+  
+    <section class="hero">
+        <div class="hero__text">
+          <h3 class="heading-3">Your own home:</h3>
+          <h1 class="heading-1">The ultimate personal freedom</h1>
+        </div>
+  
+        <div class="hero__filter-container">
+          <div class="tabs">
+            <button class="tab active" id="tabLinks">For sale</button>
+            <button class="tab" id="tabLinks">For rent</button>
+            <button class="tab" id="tabLinks">Sold</button>
+            <button class="tab" id="tabLinks">Agents</button>
+          </div>
+            <div class="searchbox">
+              <input type="text" placeholder="Suburb, location or keywords" />
+              <div class="searchbox__filters">
+                <button class="filters-btn">
+                  <svg
+                    width="17"
+                    height="18"
+                    viewBox="0 0 17 18"
+                    fill="transparent"
+                  >
+                    <path
+                      d="M0.905469 2.56289H6.10547M8.50547 2.56289L15.3055 2.56289M0.905469 15.3629H4.50547M6.90547 15.3629H15.3055M15.3055 8.98789H12.5055M10.1055 8.98789L0.699219 8.98789M8.50547 2.53789C8.50547 3.20063 7.96821 3.73789 7.30547 3.73789C6.64273 3.73789 6.10547 3.20063 6.10547 2.53789C6.10547 1.87515 6.64273 1.33789 7.30547 1.33789C7.96821 1.33789 8.50547 1.87515 8.50547 2.53789ZM6.90547 15.3379C6.90547 16.0006 6.36821 16.5379 5.70547 16.5379C5.04273 16.5379 4.50547 16.0006 4.50547 15.3379C4.50547 14.6751 5.04273 14.1379 5.70547 14.1379C6.36821 14.1379 6.90547 14.6751 6.90547 15.3379ZM10.1055 9.01289C10.1055 8.35015 10.6427 7.81289 11.3055 7.81289C11.9682 7.81289 12.5055 8.35015 12.5055 9.01289C12.5055 9.67563 11.9682 10.2129 11.3055 10.2129C10.6427 10.2129 10.1055 9.67563 10.1055 9.01289Z"
+                      stroke="#b28451"
+                    ></path>
+                  </svg>
+                </button>
+                <span class="divider"></span>
+                <button class="search-button">
+                  <svg width="24" height="23" viewBox="0 0 14 13" fill="none">
+                    <path
+                      d="M10.2953 9.40665C9.31687 10.3851 7.98981 10.9348 6.60607 10.9348C5.22233 10.9348 3.89526 10.3851 2.91681 9.40665C1.93836 8.4282 1.38867 7.10113 1.38867 5.71739C1.38867 4.33366 1.93836 3.00659 2.91681 2.02814C3.89526 1.04969 5.22233 0.5 6.60607 0.5C7.98981 0.5 9.31687 1.04969 10.2953 2.02814C11.2738 3.00659 11.8235 4.33366 11.8235 5.71739C11.8235 7.10113 11.2738 8.4282 10.2953 9.40665ZM10.2953 9.40665L13.3887 12.5"
+                      stroke="white"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      <div class="hero__seeonon-contatainer">
+        <div class="hero__seenon-text">Seen on</div>
+        <div class="hero__seenon-logos">
+            <img src="img/logo-bbc.png" alt="Seen on logo 1" />
+            <img src="img/logo-forbes.png" alt="Seen on logo 2" />
+            <img src="img/logo-techcrunch.png" alt="Seen on logo 3" />
+            <img src="img/logo-bi.png" alt="Seen on logo 4" />
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+
+    <section class="features">
+      <div class="feature">
+        <svg class="feature__icon"><use xlink:href="img/sprite.svg#icon-global"></use></svg>
+        <h4 class="heading-4 heading-4--dark">World's best luxury homes</h4>
+        <p class="feature__text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+          distinctio necessitatibus pariatur voluptatibus.
+        </p>
+      </div>
+
+      <div class="feature">
+        <svg class="feature__icon"><use xlink:href="img/sprite.svg#icon-trophy"></use></svg>
+        <h4 class="heading-4 heading-4--dark">Only the best properties</h4>
+        <p class="feature__text">
+          Voluptatum mollitia quae. Vero ipsum sapiente molestias accusamus
+          rerum sed a eligendi aut quia.
+        </p>
+      </div>
+
+      <div class="feature">
+        <svg class="feature__icon"><use xlink:href="img/sprite.svg#icon-map-pin"></use></svg>
+        <h4 class="heading-4 heading-4--dark">All homes in in top locations</h4>
+        <p class="feature__text">
+          Tenetur distinctio necessitatibus pariatur voluptatibus quidem consequatur harum.
+        </p>
+      </div>
+
+      <div class="feature">
+        <svg class="feature__icon"><use xlink:href="img/sprite.svg#icon-key"></use></svg>
+        <h4 class="heading-4 heading-4--dark">New home in one week</h4>
+        <p class="feature__text">
+          Vero ipsum sapiente molestias accusamus rerum. Lorem, ipsum dolor sit
+          amet consectetur adipisicing elit.
+        </p>
+      </div>
+
+      <div class="feature">
+        <svg class="feature__icon"><use xlink:href="img/sprite.svg#icon-presentation"></use></svg>
+        <h4 class="heading-4 heading-4--dark">Top 1% realtors</h4>
+        <p class="feature__text">
+          Quidem consequatur harum, voluptatum mollitia quae. Tenetur distinctio
+          necessitatibus pariatur voluptatibus.
+        </p>
+      </div>
+
+      <div class="feature">
+        <svg class="feature__icon"><use xlink:href="img/sprite.svg#icon-lock"></use></svg>
+        <h4 class="heading-4 heading-4--dark">Secure payments on nexter</h4>
+        <p class="feature__text">
+          Pariatur voluptatibus quidem consequatur harum, voluptatum mollitia quae.
+        </p>
+      </div>
+    </section>
+
+    <!-- NEWS -->
+
+    <section class="news">
+      <h2 class="heading-2 news__title" >Latest Property News</h2> 
+      <div class = "news__card">
+        <div class ="news__card__img"><img src="img/maria-ziegler-jJnZg7vBfMs-unsplash.jpg" /></div>
+          <div class="news__card__body">
+            <small>Sub Title Here</small>
+            <a href="#" target="_blank"><h3 class = "heading-3">Title comes right here</h3></a>
+            <p class="news__card__body-text">lLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  <a class="news__learn-more">Learn more &rarr;</a> 
+          </div>
+      </div>
+      <div class = "news__card">
+          <div class ="news__card__img"><img src="img/piggybank-1WuCoHTZ2JQ-unsplash.jpg" /></div>
+            <div class="news__card__body">
+              <small>SUB HEADING HERE</small>
+              <a href="#" target="_blank"><h3 class = "heading-3">Title comes right here</h3></a>
+              <p class="news__card__body-text">lLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <a class="news__learn-more">Learn more &rarr;</a>  
+            </div>
+      </div>
+        <div class = "news__card">
+            <div class ="news__card__img">
+              <img src="img/temitope-adeoye-_fUkF-dLwZQ-unsplash.jpg" />
+            </div>
+             <div class="news__card__body">
+               <small>SUB HEADING HERE</small>
+               <h3 class = "heading-3 news__card__body-title">Title comes right here</h3>
+               <p class="news__card__body-text">lLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <a class="news__learn-more">Learn more &rarr;</a>
+             </div>
+        </div>
+    
+      <a class="news__learn-more"> View all news &rarr;</a>
+    </section>
+
+    <!-- REALTORS -->
+
+    <section class="realtors">
+      <h3 class="heading-3">Our Top Realtors</h3>
+      <div class="realtors__list">
+        <div class="realtor">
+          <img src="img/realtor-1.jpeg" alt="Realtor 1" class="realtors__img" />
+          <div class="realtors__details">
+            <h4 class="heading-4 headingdark">Erik Feinman</h4>
+            <p class="realtors__sold">245 houses sold</p> 
+          </div>
+        </div>
+  
+        <div class="realtor">
+          <img src="img/realtor-2.jpeg" alt="Realtor 2" class="realtors__img" />
+          <div class="realtors__details">
+            <h4 class="heading-4 heading-4--dark">Kim Brown</h4>
+            <p class="realtors__sold">212 houses sold</p>
+          </div>
+        </div>
+
+        <div class="realtor">
+          <img src="img/realtor-3.jpeg" alt="Realtor 3" class="realtors__img" />
+          <div class="realtors__details">
+            <h4 class="heading-4 heading-4--dark">Toby Ramsey</h4>
+            <p class="realtors__sold">198 houses sold</p>
+          </div>
+        </div>
+      </div>
+
+      <a class="realtors__all-agents">Find your agent &rarr;</a>
+    </section>
+
+    <!-- STORY PICTURE -->
+
+    <div class="story__pictures">
+      <img
+        src="img/story-1.jpeg"
+        alt="Couple with new house"
+        class="story__img--1"
+      />
+      <img src="img/story-2.jpeg" alt="New house" class="story__img--2" />
+    </div>
+
+    <div class="story__content">
+      <h3 class="heading-3 mb-sm">Happy Customers</h3>
+      <h2 class="heading-2 heading-2--dark mb-md">
+        &ldquo;The best decision of our lives&rdquo;
+      </h2>
+      <p class="story__text">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+        distinctio necessitatibus pariatur voluptatibus. Quidem consequatur
+        harum volupta!
+      </p>
+      <button class="btn">Find your own home</button>
+    </div>
+
+    <!-- HOME -->
+
+    <section class="homes">
+      <div class="home">
+        <img src="img/house-1.jpeg" alt="House 1" class="home__img" />
+        <svg class="home__like">
+          <use xlink:href="img/sprite.svg#icon-heart-full"></use>
+        </svg>
+        <h5 class="home__name">Beautiful Familiy House</h5>
+        <div class="home__location">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-map-pin"></use>
+          </svg>
+          <p>USA</p>
+        </div>
+        <div class="home__rooms">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-profile-male"></use>
+          </svg>
+          <p>5 rooms</p>
+        </div>
+        <div class="home__area">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-expand"></use>
+          </svg>
+          <p>325 m<sup>2</sup></p>
+        </div>
+        <div class="home__price">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-key"></use>
+          </svg>
+          <p>$1,200,000</p>
+        </div>
+        <button class="btn home__btn">Contact realtor</button>
+      </div>
+
+      <div class="home">
+        <img src="img/house-2.jpeg" alt="House 2" class="home__img" />
+        <svg class="home__like">
+          <use xlink:href="img/sprite.svg#icon-heart-full"></use>
+        </svg>
+        <h5 class="home__name">Modern Glass Villa</h5>
+        <div class="home__location">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-map-pin"></use>
+          </svg>
+          <p>Canada</p>
+        </div>
+        <div class="home__rooms">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-profile-male"></use>
+          </svg>
+          <p>6 rooms</p>
+        </div>
+        <div class="home__area">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-expand"></use>
+          </svg>
+          <p>450 m<sup>2</sup></p>
+        </div>
+        <div class="home__price">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-key"></use>
+          </svg>
+          <p>$2,750,000</p>
+        </div>
+        <button class="btn home__btn">Contact realtor</button>
+      </div>
+
+      <div class="home">
+        <img src="img/house-3.jpeg" alt="House 3" class="home__img" />
+        <svg class="home__like">
+          <use xlink:href="img/sprite.svg#icon-heart-full"></use>
+        </svg>
+        <h5 class="home__name">Cozy Country House</h5>
+        <div class="home__location">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-map-pin"></use>
+          </svg>
+          <p>UK</p>
+        </div>
+        <div class="home__rooms">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-profile-male"></use>
+          </svg>
+          <p>4 rooms</p>
+        </div>
+        <div class="home__area">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-expand"></use>
+          </svg>
+          <p>250 m<sup>2</sup></p>
+        </div>
+        <div class="home__price">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-key"></use>
+          </svg>
+          <p>$850,000</p>
+        </div>
+        <button class="btn home__btn">Contact realtor</button>
+      </div>
+
+      <div class="home">
+        <img src="img/house-4.jpeg" alt="House 4" class="home__img" />
+        <svg class="home__like">
+          <use xlink:href="img/sprite.svg#icon-heart-full"></use>
+        </svg>
+        <h5 class="home__name">Large Rustical Villa</h5>
+        <div class="home__location">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-map-pin"></use>
+          </svg>
+          <p>Portugal</p>
+        </div>
+        <div class="home__rooms">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-profile-male"></use>
+          </svg>
+          <p>6 rooms</p>
+        </div>
+        <div class="home__area">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-expand"></use>
+          </svg>
+          <p>480 m<sup>2</sup></p>
+        </div>
+        <div class="home__price">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-key"></use>
+          </svg>
+          <p>$1,950,000</p>
+        </div>
+        <button class="btn home__btn">Contact realtor</button>
+      </div>
+
+      <div class="home">
+        <img src="img/house-5.jpeg" alt="House 5" class="home__img" />
+        <svg class="home__like">
+          <use xlink:href="img/sprite.svg#icon-heart-full"></use>
+        </svg>
+        <h5 class="home__name">Majestic Palace House</h5>
+        <div class="home__location">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-map-pin"></use>
+          </svg>
+          <p>Germany</p>
+        </div>
+        <div class="home__rooms">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-profile-male"></use>
+          </svg>
+          <p>18 rooms</p>
+        </div>
+        <div class="home__area">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-expand"></use>
+          </svg>
+          <p>4230 m<sup>2</sup></p>
+        </div>
+        <div class="home__price">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-key"></use>
+          </svg>
+          <p>$9,500,000</p>
+        </div>
+        <button class="btn home__btn">Contact realtor</button>
+      </div>
+
+      <div class="home">
+        <img src="img/house-6.jpeg" alt="House 6" class="home__img" />
+        <svg class="home__like">
+          <use xlink:href="img/sprite.svg#icon-heart-full"></use>
+        </svg>
+        <h5 class="home__name">Modern Familiy Apartment</h5>
+        <div class="home__location">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-map-pin"></use>
+          </svg>
+          <p>Italy</p>
+        </div>
+        <div class="home__rooms">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-profile-male"></use>
+          </svg>
+          <p>3 rooms</p>
+        </div>
+        <div class="home__area">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-expand"></use>
+          </svg>
+          <p>180 m<sup>2</sup></p>
+        </div>
+        <div class="home__price">
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-key"></use>
+          </svg>
+          <p>$600,000</p>
+        </div>
+        <button class="btn home__btn">Contact realtor</button>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+
+    <section class="gallery">
+      <figure class="gallery__item gallery__item--1">
+        <img src="img/gal-1.jpeg" alt="Gallery image 1" class="gallery__img" />
+      </figure>
+      <figure class="gallery__item gallery__item--2">
+        <img src="img/gal-2.jpeg" alt="Gallery image 2" class="gallery__img" />
+      </figure>
+      <figure class="gallery__item gallery__item--3">
+        <img src="img/gal-3.jpeg" alt="Gallery image 3" class="gallery__img" />
+      </figure>
+      <figure class="gallery__item gallery__item--4">
+        <img src="img/gal-4.jpeg" alt="Gallery image 4" class="gallery__img" />
+      </figure>
+      <figure class="gallery__item gallery__item--5">
+        <img src="img/gal-5.jpeg" alt="Gallery image 5" class="gallery__img" />
+      </figure>
+      <figure class="gallery__item gallery__item--6">
+        <img src="img/gal-6.jpeg" alt="Gallery image 6" class="gallery__img" />
+      </figure>
+      <figure class="gallery__item gallery__item--7">
+        <img src="img/gal-7.jpeg" alt="Gallery image 7" class="gallery__img" />
+      </figure>
+      <figure class="gallery__item gallery__item--8">
+        <img src="img/gal-8.jpeg" alt="Gallery image 8" class="gallery__img" />
+      </figure>
+      <figure class="gallery__item gallery__item--9">
+        <img src="img/gal-9.jpeg" alt="Gallery image 9" class="gallery__img" />
+      </figure>
+      <figure class="gallery__item gallery__item--10">
+        <img
+          src="img/gal-10.jpeg"
+          alt="Gallery image 10"
+          class="gallery__img"
+        />
+      </figure>
+      <figure class="gallery__item gallery__item--11">
+        <img
+          src="img/gal-11.jpeg"
+          alt="Gallery image 11"
+          class="gallery__img"
+        />
+      </figure>
+      <figure class="gallery__item gallery__item--12">
+        <img
+          src="img/gal-12.jpeg"
+          alt="Gallery image 12"
+          class="gallery__img"
+        />
+      </figure>
+      <figure class="gallery__item gallery__item--13">
+        <img
+          src="img/gal-13.jpeg"
+          alt="Gallery image 13"
+          class="gallery__img"
+        />
+      </figure>
+      <figure class="gallery__item gallery__item--14">
+        <img
+          src="img/gal-14.jpeg"
+          alt="Gallery image 14"
+          class="gallery__img"
+        />
+      </figure>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+      <ul class="nav">
+        <li class="nav__item">
+          <a href="#" class="nav__link">Find your dream home</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Request proposal</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Download home planner</a>
+        </li>
+        <li class="nav__item"><a href="#" class="nav__link">Contact us</a></li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Submit your property</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Come work with us!</a>
+        </li>
+      </ul>
+      <p class="copyright">
+        &copy; Copyright 2017 by Jonas Schmedtmann. Feel free to use this
+        project for your own purposes. This does NOT apply if you plan to
+        produce your own course or tutorials based on this project.
+      </p>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
